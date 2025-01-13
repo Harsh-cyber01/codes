@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Monkey Store</title>
+    <link rel="stylesheet" href="s3.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Urban Monkey</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul></nav>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search...">
+                <button id="search-btn">🔍</button>
+            </div>
+        
+        <div class="cart">
+            <button id="cart-button">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="products" >Royal Enfield x Urban Monkey</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products dynamically rendered here -->
+        </div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h3>Your Cart</h3>
+            <div id="cart-items"></div>
+            <p>Total: ₹<span id="cart-total">0</span></p>
+            <button id="checkout-button">Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <script src="s3.js"></script>
+</body>
+</html>

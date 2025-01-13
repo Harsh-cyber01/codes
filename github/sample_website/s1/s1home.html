@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Learn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="s1home.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM fully loaded and parsed');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">Learn Free Coding</div>
+        <nav>
+            <ul>
+                <li><a href="#course" onclick="console.log('Navigated to Course section')">Course</a></li>
+                <li><a href="#login" onclick="console.log('Navigated to Login section')">Login / Signup</a></li>
+                <li><a href="#about" onclick="console.log('Navigated to About section')">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Start Your Coding Journey for Free</h1>
+        <p>Learn coding skills that will shape your future. No experience required.</p>
+        <a href="#features" class="cta" onclick="console.log('CTA button clicked')">Get Started</a>
+    </div>
+
+    <section id="about">
+        <h2>Why Learn Coding?</h2>
+        <p>Coding is an essential skill in today's tech-driven world. Whether you're looking to start a new career, build your own projects, or just have fun, our free resources make it easy and accessible for everyone.</p>
+    </section>
+
+    <section id="features">
+        <h2>What We Offer</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Interactive Tutorials</h3>
+                <p>Step-by-step lessons that make learning to code fun and easy.</p>
+            </div>
+            <div class="feature">
+                <h3>Community Support</h3>
+                <p>Join a vibrant community of learners and mentors to grow together.</p>
+            </div>
+            <div class="feature">
+                <h3>Free Resources</h3>
+                <p>Access a wide range of free coding materials, including videos, articles, and exercises.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Learn Free Coding. All rights reserved. | <a href="#" onclick="console.log('Privacy Policy clicked')">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
