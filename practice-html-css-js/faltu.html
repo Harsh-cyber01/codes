@@ -1,0 +1,839 @@
+
+<!--
+  html code :
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="D:\websitedesign\web1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="D:\websitedesign\webcon1.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="D:\websitedesign\webcon2.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="D:\websitedesign\wencon3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="D:\websitedesign\wencon3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+
+
+web course uses=
+<p>uses= C programming language is a machine-independent programming language that is mainly used to create many types of applications and operating systems such as Windows, and other complicated programs such as the Oracle database, Git, Python interpreter, and games</p>
+
+<p>uses= C++ (or “C-plus-plus”) is a general-purpose programming and coding language. C++ is used in developing browsers, operating systems, and applications, as well as in-game programming, software engineering, data structures, etc.</p>
+
+
+<p>uses= Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it’s relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances.</p>
+
+
+<p>uses= JavaScript is a light-weight object-oriented programming language that is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language. JavaScript enables dynamic interactivity on websites when it is applied to an HTML document.JavaScript helps the users to build modern web applications to interact directly without reloading the page every time. JavaScript is commonly used to dynamically modify HTML and CSS to update a user interface by the DOM API. It is mainly used in web applications.</p>
+ 
+
+
+
+
+
+javascript=
+<script>
+  let slideIndex=1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active","");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+-->
+
+
+
+<!-- html course/about= 
+<head>
+  <title>cousre/about</title>
+  <link rel="stylesheet" type="text/css" href="faltu.css">
+  </head>
+<body>
+<div class="container-block container">
+  <p class="text-blk team-head-text">Our Team
+  </p>
+  <div class="responsive-container-block teamcard-container">
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="D:\websitedesign\webcourC.jpg" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="D:\websitedesign\webcourCplus.png" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="D:\websitedesign\webcourpyth.jpg" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="D:\websitedesign\webcourjvascri.jpg" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="" class="team-img" alt="loading" />
+        </div>
+        <div class="team-card-content">
+          <p class="text-blk name">Roger Lubin</p>
+          <p class="text-blk position">CEO</p>
+          <p><button class="button">start</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+-->
+
+<!--
+<head>
+  <title> search</title>
+<link rel="stylesheet" type="text/css" href="faltu.css">
+</head>
+<body>
+<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+   <ul id="myMenu">
+  <li><a href="#">HTML</a></li>
+  <li><a href="#">CSS</a></li>
+  <li><a href="#">JavaScript</a></li>
+  <li><a href="#">PHP</a></li>
+  <li><a href="#">Python</a></li>
+  <li><a href="#">jQuery</a></li>
+  <li><a href="#">SQL</a></li>
+  <li><a href="#">Bootstrap</a></li>
+  <li><a href="#">Node.js</a></li>
+</ul>
+
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+</body>
+-->
+
+
+
+
+<!--
+  java script=
+  <input type="submit" onClick="myFunction()"/>
+    <script>
+      function myFunction() {
+        window.location.href="http://programminghead.com";
+      }
+    </script> -->
+
+
+<!--
+    <body>
+      <form action="/action_page.php">
+          <div class="imgcontainer">
+              <img src="D:\websitedesign\weblogo.png"alt="logo" class="avatar">
+          </div>
+          <div class="container">
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+   
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+   
+              <button type="submit">Login</button>
+              <input type="checkbox" checked="checked"> Remember me
+          </div>
+   
+          <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+      </form>
+  </body>    
+-->
+
+
+
+<!--
+  <span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+-->
+
+<!--<br><br><br><br>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+      canvas {
+          border:1px solid #d3d3d3;
+          background-color: #f1f1f1;
+      }
+      </style>
+      </head>
+      <body onload="startGame()">
+      <script>
+      
+      var myGamePiece;
+      var myObstacles = [];
+      var myScore;
+      
+      function startGame() {
+          myGamePiece = new component(30, 30, "red", 10, 120);
+          myGamePiece.gravity = 0.05;
+          myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+          myGameArea.start();
+      }
+      
+      var myGameArea = {
+          canvas : document.createElement("canvas"),
+          start : function() {
+              this.canvas.width = 480;
+              this.canvas.height = 270;
+              this.context = this.canvas.getContext("2d");
+              document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+              this.frameNo = 0;
+              this.interval = setInterval(updateGameArea, 20);
+              },
+          clear : function() {
+              this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+          }
+      }
+      
+      function component(width, height, color, x, y, type) 
+      {
+          this.type = type;
+          this.score = 0;
+          this.width = width;
+          this.height = height;
+          this.speedX = 0;
+          this.speedY = 0;    
+          this.x = x;
+          this.y = y;
+          this.gravity = 0;
+          this.gravitySpeed = 0;
+          this.update = function() {
+              ctx = myGameArea.context;
+              if (this.type == "text") {
+                  ctx.font = this.width + " " + this.height;
+                  ctx.fillStyle = color;
+                  ctx.fillText(this.text, this.x, this.y);
+              } else {
+                  ctx.fillStyle = color;
+                  ctx.fillRect(this.x, this.y, this.width, this.height);
+              }
+          }
+          this.newPos = function() {
+              this.gravitySpeed += this.gravity;
+              this.x += this.speedX;
+              this.y += this.speedY + this.gravitySpeed;
+              this.hitBottom();
+          }
+          this.hitBottom = function() {
+              var rockbottom = myGameArea.canvas.height - this.height;
+              if (this.y > rockbottom) {
+                  this.y = rockbottom;
+                  this.gravitySpeed = 0;
+              }
+          }
+          this.crashWith = function(otherobj) {
+              var myleft = this.x;
+              var myright = this.x + (this.width);
+              var mytop = this.y;
+              var mybottom = this.y + (this.height);
+              var otherleft = otherobj.x;
+              var otherright = otherobj.x + (otherobj.width);
+              var othertop = otherobj.y;
+              var otherbottom = otherobj.y + (otherobj.height);
+              var crash = true;
+              if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+                  crash = false;
+              }
+              return crash;
+          }
+      }
+      
+      function updateGameArea() {
+          var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+          for (i = 0; i < myObstacles.length; i += 1) {
+              if (myGamePiece.crashWith(myObstacles[i])) {
+                  return;
+              } 
+          }
+          myGameArea.clear();
+          myGameArea.frameNo += 1;
+          if (myGameArea.frameNo == 1 || everyinterval(150)) {
+              x = myGameArea.canvas.width;
+              minHeight = 20;
+              maxHeight = 200;
+              height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+              minGap = 50;
+              maxGap = 200;
+              gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+              myObstacles.push(new component(10, height, "green", x, 0));
+              myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+          }
+          for (i = 0; i < myObstacles.length; i += 1) {
+              myObstacles[i].x += -1;
+              myObstacles[i].update();
+          }
+          myScore.text="SCORE: " + myGameArea.frameNo;
+          myScore.update();
+          myGamePiece.newPos();
+          myGamePiece.update();
+      }
+      
+      function everyinterval(n) {
+          if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+          return false;
+      }
+      
+      function accelerate(n) {
+          myGamePiece.gravity = n;
+      }
+      </script>
+      <br>
+      <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+      <p>Use the ACCELERATE button to stay in the air</p>
+      <p>How long can you stay alive?</p>
+    -->
+
+
+    <!--
+      Games section= 
+
+      <br><br><br>
+
+    <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2>Front Side</h2>
+      </div>
+      <div class="flip-box-back">
+        <h2>Back Side</h2>
+      </div>
+    </div>
+  </div>
+  
+<br><br><br>
+
+<div id="game">
+    <div id="character"></div>
+    <div id="block"></div>
+    </div>
+
+<script src="blockgames.js"></script>
+    -->
+
+    <!--
+       <br><br><br>
+
+    <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2>Front Side</h2>
+      </div>
+      <div class="flip-box-back">
+        <h2>Back Side</h2>
+      </div>
+    </div>
+  </div>
+    -->
+
+    <!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jump Game</title>
+    <link rel="stylesheet" href="webBR.css">
+</head>
+<body>
+    <div id="game">
+        <div id="character"></div>
+        <div id="block"></div>
+    </div>
+<script src="blockgames.js"></script>
+</body>
+</html>
+-->
+
+
+
+
+<!-- About section 1st look
+  <!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <title>
+      HACKER ZONE
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+  <h2>✯ About Website Privacy Policy</h2>
+<h3>Privacy Policy :</h3>
+
+<h4>  We use data to build better services
+
+We use the information we collect from all our services for the following purposes:</h4>
+
+<h4>Provide our services</h4>
+<p>We use your information to deliver our services,
+like processing the terms you search for in order to return results or helping you share content
+by suggesting recipients from your contacts.</p>
+<br>
+
+<h4>Maintain & improve our services</h4>
+<p>We also use your information to ensure our services are working as intended, 
+such as tracking outages or troubleshooting issues that you report to us. 
+And we use your information to make improvements to our services — for example, 
+understanding which search terms are most frequently misspelled helps us improve spell-check features used across our services.
+</p>
+<br>
+
+<h4>Develop new services</h4>
+<p> We use the information we collect in existing services to help us develop new ones.
+For example, understanding how people organized their photos in Picasa, Google's first photos app,
+helped us design and launch Google Photos.
+</p>
+<br>
+
+<h4> Provide personalized services, including content and ads</h4>
+<p> 
+We use the information we collect to customize our services for you, 
+including providing recommendations, personalized content, and customized search results. For example, 
+Security Checkup provides security tips adapted to how you use Google products. 
+And Google Play uses information like apps you've already installed and videos you've watched on YouTube to suggest new apps you might like.
+</p>
+<br>
+
+<h4>Depending on your settings, we may also show you personalized ads based on your interests. </h4>
+For example,
+if you search for “mountain bikes,” you may see an ad for sports equipment when you're browsing a site that shows ads served by Hacker Zone.
+You can control what information we use to show you ads by visiting your ad settings in My Ad Center.
+<p> 
+We don't show you personalized ads based on sensitive categories, such as race, religion, sexual orientation, or health.
+<br>We don't show you personalized ads based on your content from Drive, Gmail, or Photos.
+<br>We don't share information that personally identifies you with advertisers, 
+such as your name or email, unless you ask us to. For example,
+if you see an ad for a nearby flower shop and select the “tap to call” button,
+we'll connect your call and may share your phone number with the flower shop.
+</p>
+<br>
+
+<h4>Go to My Ad Center</h4>
+
+<h5> Measure performance</h5>
+<p> We use data for analytics and measurement to understand how our services are used.
+For example, we analyze data About your visits to our sites to do things like optimize product design. 
+And we also use data About the ads you interact with to help advertisers understand the performance of their ad campaigns. 
+We use a variety of tools to do this, including Google Analytics. When you visit sites or use apps that use Google Analytics,
+a Google Analytics customer may choose to enable Google to link information About your activity from that site or app with 
+activity from other sites or apps that use our ad services.
+</p>
+<br>
+
+<h4>Communicate with you</h4>
+<p> We use information we collect, like your email address, to interact with you directly. For example,
+we may send you a notification if we detect suspicious activity, like an attempt to sign in to your 
+Google Account from an unusual location. Or we may let you know About upcoming changes or improvements to our services. 
+And if you contact Google, we'll keep a record of your request in order to help solve any issues you might be facing.
+</p>
+<br>
+
+<h4> Protect Google, our users, and the public</h4>
+
+<p> We use information to help improve the safety and reliability of our services. This includes detecting, preventing, and responding to fraud,
+abuse, security risks, and technical issues that could harm Google, our users, or the public.
+</p>
+<p> We use different technologies to process your information for these purposes. We use automated systems that analyze
+your content to provide you with things like customized search results, personalized ads,
+or other features tailored to how you use our services. And we analyze your content to help us detect abuse such as spam,
+ malware, and illegal content. We also use algorithms to recognize patterns in data. For example, 
+ Google Translate helps people communicate across languages by detecting common language patterns in phrases you ask it to translate.
+</p>
+<p> We may combine the information we collect among our services and across your devices for the purposes described above. For example,
+if you watch videos of guitar players on YouTube, you might see an ad for guitar lessons on a site that uses our ad products.
+Depending on your account settings, your activity on other sites and apps may be associated with your personal information 
+in order to improve Google's services and the ads delivered by Google.
+</p>
+<p>  
+If other users already have your email address or other information that identifies you,
+we may show them your publicly visible Google Account information, such as your name and photo. 
+This helps people identify an email coming from you, for example.
+</p>
+
+<h5> We'll ask for your consent before using your information for a purpose that isn't covered in this Privacy Policy.</h5>
+
+</p>
+
+<br><br>
+
+<li><p></p></li>
+   
+</body>
+</html> 
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+    .login-box {
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .login-box input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+    .login-box input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

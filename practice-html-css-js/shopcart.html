@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopcart</title>
+    <link rel="stylesheet" type="text/css" href="shopstyle.css">
+</head>
+<body>
+    <header>
+        <h1>SHOPCART</h1>
+        <h2>Buy Anything</h2>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="showcase">
+            <ul class="cf">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <ol>
+            <li class="hide-no-small">
+                <img src="spic.jpg" alt="Item image 1" loading="lazy">
+            </li>
+            <li>
+                <img src="spic.jpg" alt="Item image 2" loading="lazy">
+            </li>
+            <li>
+                <img src="spic.jpg" alt="Item image 3" loading="lazy">
+            </li>
+            <li>
+                <img src="spic.jpg" alt="Item image 4" loading="lazy">
+            </li>
+            <li>
+                <img src="spic.jpg" alt="Item image 5" loading="lazy">
+            </li>
+            <li>
+                <img src="spic.jpg" alt="Item image 6" loading="lazy">
+            </li>
+            <li>
+                <img src="spic.jpg" alt="Item image 7" loading="lazy">
+            </li>
+            <li>
+                <img src="spic.jpg" alt="Item image 8" loading="lazy">
+            </li>
+        </ol>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav.showcase ul');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

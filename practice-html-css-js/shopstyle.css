@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    color: #666;
+}
+
+/* Navigation Bar */
+nav.showcase {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav.showcase ul {
+    list-style: none;
+    display: flex; /* Always display flex on larger screens */
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav.showcase ul li {
+    text-align: center;
+}
+
+nav.showcase ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav.showcase ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hide hamburger menu by default */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+main {
+    text-align: center;
+}
+
+main ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
+
+main ol li {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main ol li img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav.showcase ul {
+        display: none; /* Hide navigation menu on smaller screens */
+        flex-direction: column;
+    }
+
+    nav.showcase ul.show {
+        display: flex; /* Show navigation menu when toggled */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+}

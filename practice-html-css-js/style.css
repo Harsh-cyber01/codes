@@ -1,0 +1,48 @@
+body
+{
+	margin: 0;
+padding: 0;
+background-repeat:no-repeat ;
+background-position: center;
+}
+nav
+{
+	height: 80px;
+       width: 100%;
+background-color: cyan;
+background-position: center;
+color: rgb(54, 34, 34);
+}
+nav ul {  
+         padding: 0 25px;
+         margin: 0;
+         text-align: center;
+      }
+nav li{
+	display: inline;
+	float: left;
+	text-align: center;
+}
+nav a{
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 25px 0;
+	color: rgb(105, 105, 105);
+}
+nav li:hover{
+              background-color:orange ;
+
+}
+h1{
+	color: #FFA500;
+	font-style: bold;
+	text-align: center;
+	margin: 0;
+}
+h2{
+	color: orange;
+}
+

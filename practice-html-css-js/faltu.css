@@ -1,0 +1,854 @@
+/* 
+dd css=
+body{
+    background-image: url("D:\websitedesign\web1.jpg");
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    text-align: center;
+  }
+
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+.row {
+    display: flex;
+  }  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+  full css of myweb=
+  h1{
+    width: 100%;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 50px;
+    padding: auto;
+    margin: 0;
+    border: 4px solid rgba(0, 0, 0, 0);
+}
+body{
+    background-color: rgb(0, 132, 255);
+}
+.he img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.he h1 {
+  position: relative;
+  top: -10px;
+  left: 10px;
+}
+header{
+  background-color: #00e1ff;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-position: center;
+    display: inline;
+    margin: 0;
+}
+nav a{
+    display: inline-table;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 35px;
+    color: black;
+}
+nav a:hover{
+    background-color: rgb(15, 28, 143);
+}
+
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+ 
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 30%;
+    border-radius: 60%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+span.psw {
+        display: block;
+        float: none;
+    }
+.cancelbtn {
+        width: 100%;
+    }
+}
+
+
+
+
+*{box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev,.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 50px;
+  padding: 16px;
+  color: rgb(2, 2, 2);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgb(133, 122, 122);
+}
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 5px;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+*{
+  font-family:Nunito, sans-serif;
+}
+.text-blk{
+  margin-top:0px;
+  margin-right:0px;
+  margin-bottom:0px;
+  margin-left:0px;
+  line-height:25px;
+}
+.responsive-container-block{
+  min-height:75px;
+  height:fit-content;
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:0px;
+  margin-right:auto;
+  margin-bottom:0px;
+  margin-left:auto;
+  justify-content:flex-start;
+}
+.container-block{
+  min-height:75px;
+  height:fit-content;
+  width:100%;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  display:block;
+}
+.responsive-cell-block{
+  min-height:75px;
+}
+.container{
+  max-width:1380px;
+  margin-top:80px;
+  margin-right:auto;
+  margin-bottom:80px;
+  margin-left:auto;
+  padding-top:0px;
+  padding-right:30px;
+  padding-bottom:0px;
+  padding-left:30px;
+}
+.team-head-text{
+  font-size:48px;
+  line-height:50px;
+  font-weight:900;
+  text-align:center;
+  margin-top:0px;
+  margin-right:0px;
+  margin-bottom:70px;
+  margin-left:0px;
+}
+.name{
+  font-size:18px;
+  margin-top:11px;
+  margin-right:0px;
+  margin-bottom:0px;
+  margin-left:0px;
+  font-weight:700;
+}
+.position{
+  margin-top:5px;
+  margin-right:0px;
+  margin-bottom:0px;
+  margin-left:0px;
+}
+.team-card-container{
+  width:263px;
+  margin-top:0px;
+  margin-right:15px;
+  margin-bottom:30px;
+  margin-left:15px;
+}
+.teamcard-container{
+  justify-content:space-evenly;
+}
+.team-img-wrapper{
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-right-radius:6px;
+  border-bottom-left-radius:6px;
+}
+.team-img{
+  max-width:100%;
+}
+@media (max-width: 500px){
+  .team-card-container{
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:30px;
+    margin-left:0px;
+    width:100%;
+  }
+  .team-img{
+    width:100%;
+  }
+}  
+
+
+  css=
+
+nav ul{
+    padding: 0,25px;
+    margin: 0;
+    text-align: center;
+}
+ border: 4px solid rgb(0, 195, 255);
+nav li{
+    display: inline-table;
+    float: center;
+    text-align: center;
+    border: 4px solid rgb(255, 255, 255);
+}
+*/
+
+
+
+/* css course/about=  
+*{
+    font-family:Nunito, sans-serif;
+  }
+  .text-blk{
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+    line-height:25px;
+  }
+  .responsive-container-block{
+    min-height:75px;
+    height:fit-content;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:0px;
+    margin-right:auto;
+    margin-bottom:0px;
+    margin-left:auto;
+    justify-content:flex-start;
+  }
+  .container-block{
+    min-height:75px;
+    height:fit-content;
+    width:100%;
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    display:block;
+  }
+  .responsive-cell-block{
+    min-height:75px;
+  }
+  .container{
+    max-width:1380px;
+    margin-top:80px;
+    margin-right:auto;
+    margin-bottom:80px;
+    margin-left:auto;
+    padding-top:0px;
+    padding-right:30px;
+    padding-bottom:0px;
+    padding-left:30px;
+  }
+  .team-head-text{
+    font-size:48px;
+    line-height:50px;
+    font-weight:900;
+    text-align:center;
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:70px;
+    margin-left:0px;
+  }
+  .name{
+    font-size:18px;
+    margin-top:11px;
+    margin-right:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+    font-weight:700;
+  }
+  .position{
+    margin-top:5px;
+    margin-right:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+  }
+  .team-card-container{
+    width:263px;
+    margin-top:0px;
+    margin-right:15px;
+    margin-bottom:30px;
+    margin-left:15px;
+  }
+  .teamcard-container{
+    justify-content:space-evenly;
+  }
+  .team-img-wrapper{
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-right-radius:6px;
+    border-bottom-left-radius:6px;
+  }
+  .team-img{
+    max-width:100%;
+  }
+  @media (max-width: 500px){
+    .team-card-container{
+      margin-top:0px;
+      margin-right:0px;
+      margin-bottom:30px;
+      margin-left:0px;
+      width:100%;
+    }
+    .team-img{
+      width:100%;
+    }
+  }  
+
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+*/
+
+
+/* Style the search box 
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu 
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the navigation links 
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+  */
+
+
+
+
+
+
+
+  /* new login form css= */
+
+/*
+* {box-sizing: border-box}
+
+/* style the container 
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons 
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors 
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons 
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button *
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout *
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns *
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line *
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line *
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens *
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container *
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other *
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line *
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens *
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+
+/* update section games */
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect 
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect *
+}
+
+/* This container is needed to position the front and back side *
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container *
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side 
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;  Safari 
+  backface-visibility: hidden;
+}
+
+/* Style the front side 
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side 
+.flip-box-back {
+  background-color: rgb(255, 124, 30);
+  color: white;
+  transform: rotateY(180deg);
+}
+*/
+
+
+
+/* rating css= 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0 auto; /* Center website *
+  max-width: 800px; /* Max width *
+  padding: 20px;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout *
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right *
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns *
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container *
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars *+
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other *
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens 
+  .right {
+    display: none;
+  }
+}
+*/
+
+/* 
+/* Flip-box Game=    */
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect *
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect *
+}
+
+/* This container is needed to position the front and back side *
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container *
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side *
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari *
+  backface-visibility: hidden;
+}
+
+/* Style the front side *
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side 
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+*/
+
+/*
+
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: green;
+    position: relative;
+    top: 150px;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+.animate{
+    animation: jump 300ms ;
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
+
+*/
